@@ -2,14 +2,13 @@ Source: grip
 Section: sound
 Priority: optional
 Maintainer: Marco Vermeulen <vermeulen.mp@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev, libgnomeui-dev, libvte-dev, libcurl4-openssl-dev
 Standards-Version: 3.8.4
 Homepage: http://nostatic.org/grip
 
 Package: grip
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, gettext, file, libcroco3, libdbus-1-3, libgcrypt11, libkeyutils1, libcurl4-openssl-dev, libgnomeui-dev, libmagic1, libexpat1, libvte-dev, lib32asound2, libgpg-error0, libunistring0, libasound2
-Recommends: cdparanoia, flac, lame, vorbis-tools, id3v2
+Depends: ${shlibs:Depends}, ${misc:Depends}, gettext, file, libcroco3, libdbus-1-3, libgcrypt11, libkeyutils1, libmagic1, libexpat1, lib32asound2, libgpg-error0, libunistring0, libasound2, cdparanoia, flac, lame, vorbis-tools, id3v2
 Description: Grip is a cd-player and cd-ripper for the Gnome desktop.
 	Grip is a cd-player and cd-ripper for the Gnome desktop. It has the ripping capabilities of cdparanoia builtin, but can also use external rippers (such as cdda2wav). It also provides an automated frontend for MP3 (and other audio format) encoders, letting you take a disc and transform it easily straight into MP3s. Internet disc lookups are supported for retrieving track information from disc database servers.Grip works with DigitalDJ to provide a unified "computerized" version of your music collection.Full-featured CD player with a small screen footprint in "condensed" mode
 	.
